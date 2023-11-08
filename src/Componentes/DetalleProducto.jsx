@@ -4,7 +4,7 @@ import ProductoSKU from "./ProductoSKU";
 import CantidadProducto from "./CantidadProducto";
 import NombreProducto from "./NombreProducto";
 
-function DetalleDeProducto({ producto }) {
+function DetalleProducto({ producto }) {
   return (
     <div>
       <NombreProducto nombre={producto.nombre} />
@@ -16,9 +16,4 @@ function DetalleDeProducto({ producto }) {
   );
 }
 
-export default DetalleDeProducto;
-
-
-
- 
-
+export default DetalleProducto;

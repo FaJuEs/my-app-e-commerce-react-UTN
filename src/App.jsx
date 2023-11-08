@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
-import DetalleDeProducto from "./DetalleDeProducto";
+import DetalleProducto from "./DetalleProducto";
+
+
 
 function App() {
   const DatosProducto = {
@@ -14,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Detalle del Producto</h1>
-      <DetalleDeProducto producto={DatosProducto} />
+      <DetalleProducto producto={DatosProducto} />
     </div>
   );
 }
 
-export default App;
+export default App; 
