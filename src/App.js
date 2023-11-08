@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import DetalleDeProducto from "./DetalleDeProducto";
 
 function App() {
+  const DatosProducto = {
+    nombre: "Nombre del Producto",
+    descripcion: "Descripción del Producto",
+    precio: 100.0,
+    sku: "SKU123456",
+    cantidad: 10,
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Detalle del Producto</h1>
+      <DetalleDeProducto producto={DatosProducto} />
     </div>
   );
 }
