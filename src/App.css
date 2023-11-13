@@ -1,38 +1,94 @@
-.App {
+header {
+  background-color: #fc7300;
+  box-shadow: #00425a 5px 5px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  justify-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #1f8a70;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: #eff5fe;
+  text-shadow: #00425a 5px 5px 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #eff5fe;
+  text-shadow: #00425a 5px 5px 5px;
+  text-decoration: underline;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  display: flex;
+  align-items: end;
+  background-image: url(img/img1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nombre {
+  display: flex;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  color: #eff5fe;
+  text-shadow: #00425a 5px 5px 5px;
+  text-decoration: underline;
+}
+.descripcion {
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  color: #eff5fe;
+}
+
+.precio {
+  color: rgb(194, 15, 15);
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.sku {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.cantidad {
+  font-size: 1rem;
+  color: #eff5fe;
+  text-align: center;
+}
+
+footer {
+  background-color: #fc7300;
+  box-shadow: #00425a 5px 5px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  justify-items: center;
+  text-align: center;
 }
