@@ -1,3 +1,72 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
 header {
   background-color: #fc7300;
   box-shadow: #00425a 5px 5px 3px;
@@ -27,26 +96,35 @@ h2 {
   color: #eff5fe;
   text-shadow: #00425a 5px 5px 5px;
   text-decoration: underline;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
-.img {
-  display: flex;
-  align-items: end;
+/* .img {
+  display: inline-block;
+  align-items: center;
   background-image: url(img/img1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /*background-size: cover;*/
+/*background-position: center;*/
+/*background-repeat: no-repeat;
+} */
+
+.img {
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
 }
 
 .nombre {
-  display: flex;
-  margin: 2%;
+  text-align: center;
 }
 
 h3 {
@@ -56,16 +134,22 @@ h3 {
   color: #eff5fe;
   text-shadow: #00425a 5px 5px 5px;
   text-decoration: underline;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
 .descripcion {
   font-size: 1.2rem;
   text-align: center;
   display: block;
   color: #eff5fe;
+  box-shadow: #00425a 5px 5px 5px;
+  margin: 0.5rem;
+  background-color: #00425a;
 }
 
 .precio {
-  color: rgb(194, 15, 15);
+  color: rgb(194, 15, 15) !important;
   text-align: center;
   font-size: 1.3rem;
   display: block;
@@ -82,7 +166,26 @@ h3 {
   text-align: center;
 }
 
+button {
+  color: #eff5fe;
+  font-size: 1rem !important;
+  background-color: #fc7300;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: inset;
+  border-color: #00425a;
+  display: block;
+  align-items: center;
+  margin: 2rem;
+}
+
+p {
+  font-size: large;
+  color: rgb(20, 187, 220);
+}
+
 footer {
+  margin-top: 2rem;
   background-color: #fc7300;
   box-shadow: #00425a 5px 5px 3px;
   display: flex;
@@ -91,4 +194,116 @@ footer {
   width: 100%;
   justify-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .img img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen en pantallas más grandes */
+  }
+
+  .nombre {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .descripcion {
+    font-size: 1.5rem;
+  }
+
+  .precio {
+    font-size: 1.6rem;
+  }
+
+  .sku {
+    font-size: 1.2rem;
+  }
+
+  .cantidad {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: x-large;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 480px y 767px) */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .img img {
+    max-width: 70%;
+  }
+
+  .nombre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3,
+  .descripcion,
+  .precio,
+  .sku,
+  .cantidad {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: large;
+  }
+}
+
+/* Estilos para pantallas pequeñas (menores a 480px) */
+
+@media screen and (max-width: 479px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .img img {
+    max-width: 60%;
+  }
+
+  .nombre,
+  .descripcion,
+  .precio,
+  .sku,
+  .cantidad {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: medium;
+  }
 }

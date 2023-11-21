@@ -7,7 +7,7 @@ const NombreProducto = ({nombre}) => {
     <h2>{nombre}</h2> <br /><br />
     
     <div className="img">
-         <img src="public/assets/img/img1.png" alt="img-producto"/>  
+         <img src="/assets/img/img1.png" alt="img-producto"/>  
         </div>
 </div>
       

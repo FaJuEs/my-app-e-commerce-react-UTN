@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 
+
+
 const PrecioProducto = ({ precio }) => {
   return (
     <div className='precio'>
