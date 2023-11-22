@@ -27,10 +27,13 @@ const ProductoDetalle = ({
       <ProductoSKU sku={sku} />
       <CantidadDisponible cantidad={cantidadDisponible} />
 
+
+      {/* <button onClick={handleCompraClick} disabled={compraRealizada}>
+      Agregar al carrito </button> */}
       <button onClick={handleCompraClick} disabled={compraRealizada}>
         Comprar
       </button>
-
+      
       {compraRealizada && <p> GRACIAS POR SU COMPRA !!!</p>}
     </div>
   );

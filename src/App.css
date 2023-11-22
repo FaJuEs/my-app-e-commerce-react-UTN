@@ -105,17 +105,8 @@ h2 {
   margin-top: 1rem;
 }
 
-/* .img {
-  display: inline-block;
-  align-items: center;
-  background-image: url(img/img1.png);
-  /*background-size: cover;*/
-/*background-position: center;*/
-/*background-repeat: no-repeat;
-} */
-
 .img {
-  text-align: center; /* Alinea el contenido al centro */
+  text-align: center;
 }
 
 .img img {
@@ -168,7 +159,7 @@ h3 {
 
 button {
   color: #eff5fe;
-  font-size: 1.5rem;
+  font-size: 1.3rem !important;
   background-color: #fc7300;
   padding: 10px;
   border-radius: 10px;
@@ -178,11 +169,18 @@ button {
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  transition: transform 0.3s;
+  border-style: inset;
+}
+
+button:hover {
+  background-color: #ff9632;
+  transform: scale(1.1);
 }
 
 p {
   color: #eff5fe;
-  font-size: large;
+  font-size: larger;
   text-align: center;
 }
 
